@@ -1,0 +1,164 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Fire Service Corporation | Fire Safety | Security</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style is:global>
+      :root {
+        --red: #c8151b;
+        --black: #0a0a0a;
+        --charcoal: #1a1a1a;
+        --steel: #2c2c2c;
+        --silver: #aaa;
+        --white: #f5f0eb;
+        --orange: #e8620a;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Barlow', sans-serif; background: var(--black); color: var(--white); }
+      a { color: inherit; }
+
+      nav {
+        position: fixed; inset: 0 0 auto 0; z-index: 10;
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 16px 24px; background: rgba(10,10,10,.92); border-bottom: 1px solid rgba(200,21,27,.3);
+      }
+      .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; line-height: 1.05; }
+      .nav-logo span { color: var(--red); }
+      .nav-links { display: flex; gap: 20px; list-style: none; }
+      .nav-links a { text-decoration: none; color: var(--silver); text-transform: uppercase; font: 600 .85rem 'Barlow Condensed', sans-serif; letter-spacing: .1em; }
+
+      .hero {
+        min-height: 100vh;
+        padding: 130px 24px 60px;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 60%, #0a0a0a 100%);
+      }
+      .badge { display:inline-block; border:1px solid var(--red); color:var(--red); padding:6px 12px; font:700 .7rem 'Barlow Condensed',sans-serif; letter-spacing:.15em; text-transform:uppercase; }
+      h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 12vw, 7rem); line-height: .95; margin-top: 20px; }
+      .outline { color: transparent; -webkit-text-stroke: 2px var(--red); }
+      .hero-sub { margin-top: 20px; color: var(--silver); max-width: 680px; line-height: 1.7; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+      .btn { padding: 12px 24px; text-decoration: none; text-transform: uppercase; font: 700 .9rem 'Barlow Condensed',sans-serif; letter-spacing:.1em; border-radius: 2px; }
+      .btn-primary { background: var(--red); }
+      .btn-primary:hover { background: var(--orange); }
+      .btn-outline { border: 1px solid #666; }
+
+      section { padding: 72px 24px; }
+      #about, #products, #contact { background: var(--charcoal); }
+      .section-title { font: clamp(2rem, 8vw, 4rem) 400 'Bebas Neue',sans-serif; letter-spacing:.03em; }
+      .section-title span { color: var(--red); }
+      .section-tag { color: var(--red); text-transform: uppercase; letter-spacing: .2em; font: 700 .75rem 'Barlow Condensed',sans-serif; }
+      .divider { width: 70px; height: 3px; background: linear-gradient(90deg,var(--red),transparent); margin: 12px 0 24px; }
+
+      .grid-2 { display: grid; gap: 20px; }
+      .cards { display: grid; gap: 2px; grid-template-columns: 1fr; }
+      .card { background: var(--steel); padding: 20px; border-left: 3px solid var(--red); }
+      .card h3 { font: 700 1rem 'Barlow Condensed',sans-serif; text-transform: uppercase; letter-spacing:.05em; margin: 10px 0 6px; }
+      .card p { color: var(--silver); line-height: 1.6; font-size: .9rem; }
+
+      .contact { display:grid; gap: 20px; }
+      .form-field { display:flex; flex-direction:column; gap:6px; margin-bottom: 10px; }
+      input, textarea, select {
+        width:100%; padding:12px; border:1px solid #444; background: var(--steel); color: var(--white);
+      }
+
+      footer { padding: 28px 24px; border-top: 1px solid #333; font-size: .85rem; color: var(--silver); }
+
+      @media (min-width: 900px) {
+        nav { padding: 16px 60px; }
+        .hero, section, footer { padding-left: 60px; padding-right: 60px; }
+        .grid-2 { grid-template-columns: 1fr 1fr; }
+        .cards.services { grid-template-columns: repeat(3,1fr); }
+        .cards.products { grid-template-columns: repeat(4,1fr); }
+        .contact { grid-template-columns: 1fr 1fr; }
+      }
+      @media (max-width: 700px) {
+        .nav-links { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">ENGINEERING<br /><span>FIRE SERVICE</span> CORP.</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#products">Products</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="badge">Est. 2016 · Patna, Bihar · GSTIN: 10AAGFE0681H1ZW</div>
+        <h1><span>PROTECTING</span><br /><span class="outline">LIVES &</span><br /><span>PROPERTY</span></h1>
+        <p class="hero-sub">Bihar's trusted fire safety specialists — supplying, installing, and maintaining world-class fire protection systems for buildings, hospitals, and industries since 2016.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#services">Our Services</a>
+          <a class="btn btn-outline" href="#contact">Get a Quote</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-title">Your Fire <span>Safety</span> Partner</h2>
+        <div class="divider"></div>
+        <div class="grid-2">
+          <p style="line-height:1.8;color:var(--silver)">Engineering Fire Service Corporation has provided installation, supply, maintenance, and consultancy for fire systems across Bihar since 2016. We deliver hydrants, sprinklers, alarms, suppression systems, extinguisher servicing, and emergency planning.</p>
+          <div class="cards">
+            <div class="card"><h3>Installation</h3><p>Turnkey fire system setup for buildings, hospitals & industry.</p></div>
+            <div class="card"><h3>Maintenance</h3><p>24×7 refilling, inspection and service support.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Core <span>Services</span></h2>
+        <div class="divider"></div>
+        <div class="cards services">
+          <div class="card"><h3>Fire Suppression</h3><p>Design, supply and install suppression with clean agents, foam and powder.</p></div>
+          <div class="card"><h3>Fire Alarm Systems</h3><p>Smoke/heat detectors, MCPs and control panels tailored to site layout.</p></div>
+          <div class="card"><h3>Hydrant & Sprinkler</h3><p>Coverage planning and deployment for residential and commercial buildings.</p></div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="section-tag">What We Supply</div>
+        <h2 class="section-title">Fire Safety <span>Products</span></h2>
+        <div class="divider"></div>
+        <div class="cards products">
+          <div class="card"><h3>ABC Extinguisher</h3><p>Multipurpose Class A/B/C fire coverage.</p></div>
+          <div class="card"><h3>CO₂ Extinguisher</h3><p>Residue-free protection for electrical zones.</p></div>
+          <div class="card"><h3>Automatic Unit</h3><p>Self-activating suppression for enclosed spaces.</p></div>
+          <div class="card"><h3>Signage & Lights</h3><p>Emergency markers and evacuation signage.</p></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Contact <span>Us</span></h2>
+        <div class="divider"></div>
+        <div class="contact">
+          <div>
+            <p><strong>Address:</strong><br />H-12, Vijay Vihar Colony, Danapur, Patna – 801503</p><br/>
+            <p><strong>Mobile:</strong><br /><a href="tel:9798750732">+91 97987 50732</a></p><br/>
+            <p><strong>Email:</strong><br /><a href="mailto:engineeringfireservice@gmail.com">engineeringfireservice@gmail.com</a></p>
+          </div>
+          <form>
+            <div class="form-field"><label>Name</label><input type="text" placeholder="Full Name" /></div>
+            <div class="form-field"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" /></div>
+            <div class="form-field"><label>Service</label><select><option>Fire Alarm</option><option>Suppression</option></select></div>
+            <div class="form-field"><label>Message</label><textarea rows="4" placeholder="Describe your project"></textarea></div>
+            <a class="btn btn-primary" href="https://wa.me/919798750732" target="_blank" rel="noreferrer">Send via WhatsApp</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Engineering Fire Service Corporation. All rights reserved.</footer>
+  </body>
+</html>
